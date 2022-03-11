@@ -24,7 +24,7 @@ public class Main {
           calName ();
     }
 
-    // Exercice 1 :
+    // Exercice 1 : Find minimum of two numbers
     public static void FindMin () {
         int[] nums = new int[2];
         System.out.println("Entre value of number 1: ");
@@ -41,7 +41,7 @@ public class Main {
         System.out.println("Minimum Number of "+ nums[0] + " and " + nums[1] + " is: " + minNum + "\n ------------------No.1 end");
     }
 
-    // Exercice 2 :
+    // Exercice 2 : find minimum of three numbers
     public static void minOfThree () {
         int[] nums = new int[3];
         System.out.println("Entre value of number 1: ");
@@ -60,7 +60,7 @@ public class Main {
         System.out.println("Minimum number of 3 numbers : " +  nums[0] + " " +  nums[1] + " " +  nums[2] + " is: " + minOfThree + "\n ------------------No.2 end");
     }
 
-    // Exercice 3 :
+    // Exercice 3 : Calculate 1 + 3 + 5 + ... + 20 + 21
     public static void calSomme() {
         int s = 0;
         for (int i = 1; i <= 21; i += 2) {
@@ -69,7 +69,7 @@ public class Main {
         System.out.println("Result of s = 1 + 3 + 5 + ... + 20 + 21, the s = " + (s + 20) + "\n ------------------No.3 end");
     }
 
-    // Exercice 4 :
+    // Exercice 4 : Calculate 1 - 2 + 3 - 4 + 5 + ... - 20 + 21
     public static void calTotal () {
         int s = 0;
         for (int i = 1; i <= 21; i++) {
@@ -82,7 +82,7 @@ public class Main {
         System.out.println("Result of s = 1 - 2 + 3 - 4 + 5 + ... - 20 + 21, the s = " + s + "\n ------------------No.4 end");
     }
 
-    // Exercice 5 :
+    // Exercice 5 : Calculate numbers >= 20 total in 5 numbers
     public static void sommeCal() {
         int[] numbers = new int[5];
         int somme = 0;
@@ -98,7 +98,7 @@ public class Main {
         System.out.println("Somme of 5 numbers which >= 20 is: " + somme + "\n ------------------No.5 end");
     }
 
-    // Exercice 6 :
+    // Exercice 6 : Find how many "Madrid" in 5 names
     public static void calName () {
         Scanner sc = new Scanner(System.in);
         String[] names = new String[5];
@@ -109,9 +109,9 @@ public class Main {
         for (int i = 0; i < 5; i++) {
             System.out.println((i + 1) + ": of 5 names");
             names[i] = sc.next();
-            boolean hasName = findName.equalsIgnoreCase( names[i]);
+            boolean hasName = findName.equalsIgnoreCase( names[i]); //ignore the case of input value
             if (hasName) {
-                namesNum++;
+                namesNum++;   //increase hasName value
             }
         }
         System.out.println("Total number of name Madrid is: " + namesNum + "\n ------------------No.6 end");
